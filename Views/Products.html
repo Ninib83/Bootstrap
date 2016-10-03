@@ -1,0 +1,30 @@
+﻿<div class="col-md-12">
+    <div class="col-md-12">
+        <h1 ng-bind="title"></h1>
+        <br />
+        <button type="button"
+                class="btn btn-success"
+                data-toggle="modal"
+                data-target="#newProductModal"><span class="glyphicon glyphicon-ok"></span>
+            Add Product
+        </button>
+        <hr />
+    </div>
+
+    <div class="col-md-3"
+         ng-repeat="product in products track by $index">
+        <h1 ng-bind="product.name"></h1>
+        <p ng-bind="product.description"></p>
+
+        <button type="button"
+                class="btn btn-danger"
+                aria-label="Left Aligen"
+                ng-click="remove($index)">
+            <span class="glyphicon glyphicon-remove"></span>
+            Delete Product
+        </button>
+
+    </div>
+</div>
+
+<div ng-include="'Views/Partials/NewProductModal.html'"></div>

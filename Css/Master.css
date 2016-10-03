@@ -1,0 +1,12 @@
+﻿@import url('../Content/bootstrap.css');
+
+.navbar-inverse .navbar-nav > li > a {
+    color:white;
+}
+.navbar-inverse{
+   background-color:#ff0000 ;
+    border-color: #ff0000;
+}
+.navbar-inverse .navbar-brand {
+    color:#ffffff;
+}
